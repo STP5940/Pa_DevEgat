@@ -58,3 +58,30 @@ G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.FormNewMemberrpt.resourc
 \\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.vbproj.GenerateResource.Cache
 \\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\RdlCompile.cache
 \\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\RdlCompile.compiled
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.exe.config
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.exe
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.xml
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.pdb
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.exe
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.pdb
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.xml
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlib.pdb
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlib.xml
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.vbprojResolveAssemblyReference.cache
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Formdbconfig.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Form1.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Formmain.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormNewMemberrpt.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Formsystemlogsrpt.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Resources.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.vbproj.GenerateResource.Cache
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\RdlCompile.cache
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\RdlCompile.compiled
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeAppoint.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeCancel.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeNew.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeNote.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeReport.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeTeam.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeTerminate.resources

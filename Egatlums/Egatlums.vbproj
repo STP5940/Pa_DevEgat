@@ -84,6 +84,48 @@
     <Compile Include="Configdb\Formdbconfig.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\CommitteeAppoint\FormCommitteeAppoint.Designer.vb">
+      <DependentUpon>FormCommitteeAppoint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeAppoint\FormCommitteeAppoint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeCancel\FormCommitteeCancel.Designer.vb">
+      <DependentUpon>FormCommitteeCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeCancel\FormCommitteeCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeNew\FormCommitteeNew.Designer.vb">
+      <DependentUpon>FormCommitteeNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeNew\FormCommitteeNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeNote\FormCommitteeNote.Designer.vb">
+      <DependentUpon>FormCommitteeNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeNote\FormCommitteeNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeReport\FormCommitteeReport.Designer.vb">
+      <DependentUpon>FormCommitteeReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeReport\FormCommitteeReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeTeam\FormCommitteeTeam.Designer.vb">
+      <DependentUpon>FormCommitteeTeam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeTeam\FormCommitteeTeam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeTerminate\FormCommitteeTerminate.Designer.vb">
+      <DependentUpon>FormCommitteeTerminate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CommitteeTerminate\FormCommitteeTerminate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Report\Newmemberrpt\DsNewmember.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -148,6 +190,34 @@
     <EmbeddedResource Include="Main\Formmain.resx">
       <DependentUpon>Formmain.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeAppoint\FormCommitteeAppoint.resx">
+      <DependentUpon>FormCommitteeAppoint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeAppoint\RptCommitteeappoint.rdlc" />
+    <EmbeddedResource Include="Report\CommitteeCancel\FormCommitteeCancel.resx">
+      <DependentUpon>FormCommitteeCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeCancel\RptCommitteecancel.rdlc" />
+    <EmbeddedResource Include="Report\CommitteeNew\FormCommitteeNew.resx">
+      <DependentUpon>FormCommitteeNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeNew\RptCommitteenew.rdlc" />
+    <EmbeddedResource Include="Report\CommitteeNote\FormCommitteeNote.resx">
+      <DependentUpon>FormCommitteeNote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeNote\RptCommitteenote.rdlc" />
+    <EmbeddedResource Include="Report\CommitteeReport\FormCommitteeReport.resx">
+      <DependentUpon>FormCommitteeReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeReport\RptCommitteereport.rdlc" />
+    <EmbeddedResource Include="Report\CommitteeTeam\FormCommitteeTeam.resx">
+      <DependentUpon>FormCommitteeTeam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeTeam\RptCommitteeteam.rdlc" />
+    <EmbeddedResource Include="Report\CommitteeTerminate\FormCommitteeTerminate.resx">
+      <DependentUpon>FormCommitteeTerminate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CommitteeTerminate\RptCommitteeterminate.rdlc" />
     <EmbeddedResource Include="Report\Newmemberrpt\FormNewMemberrpt.resx">
       <DependentUpon>FormNewMemberrpt.vb</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +273,7 @@
   <ItemGroup>
     <None Include="Resources\Reports.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
