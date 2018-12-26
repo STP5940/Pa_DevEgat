@@ -1,0 +1,60 @@
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlums.exe.config
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlums.exe
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlums.pdb
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlums.xml
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlib.dll
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlib.pdb
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\bin\Debug\Egatlib.xml
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.vbprojResolveAssemblyReference.cache
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.Form1.resources
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.Formsystemlogsrpt.resources
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.Resources.resources
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.vbproj.GenerateResource.Cache
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.exe
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.xml
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.pdb
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.Formmain.resources
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\Egatlums.Formdbconfig.resources
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\RdlCompile.cache
+D:\All Project\กฟผ\Projectเจตเป้\Egatlums\Egatlums\obj\Debug\RdlCompile.compiled
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Egatlums.exe.config
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.exe
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.xml
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.pdb
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Egatlums.exe
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Egatlums.pdb
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Egatlums.xml
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Egatlib.pdb
+G:\EGAT\2018_12_19\Egatlums\Egatlums\bin\Debug\Egatlib.xml
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.vbprojResolveAssemblyReference.cache
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.Formdbconfig.resources
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.Form1.resources
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.Formmain.resources
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.Formsystemlogsrpt.resources
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.Resources.resources
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.vbproj.GenerateResource.Cache
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\RdlCompile.cache
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\RdlCompile.compiled
+G:\EGAT\2018_12_19\Egatlums\Egatlums\obj\Debug\Egatlums.FormNewMemberrpt.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Egatlums.exe.config
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.exe
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.xml
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.pdb
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Egatlums.exe
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Egatlums.pdb
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Egatlums.xml
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Egatlib.pdb
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\bin\Debug\Egatlib.xml
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.vbprojResolveAssemblyReference.cache
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.Formdbconfig.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.Form1.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.Formmain.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.FormNewMemberrpt.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.Formsystemlogsrpt.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.Resources.resources
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\Egatlums.vbproj.GenerateResource.Cache
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\RdlCompile.cache
+\\192.168.100.199\Volume_1\Programing Knowledge\กฟผ\พร้อมเข้าโปรเจค\Egatlums-Weerasak\Egatlums\obj\Debug\RdlCompile.compiled

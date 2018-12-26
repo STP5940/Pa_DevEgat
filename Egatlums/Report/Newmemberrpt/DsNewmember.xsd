@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DsNewmember" targetNamespace="http://tempuri.org/DsNewmember.xsd" xmlns:mstns="http://tempuri.org/DsNewmember.xsd" xmlns="http://tempuri.org/DsNewmember.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="EGATLUDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EGATLUDBConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Egatlums.My.MySettings.GlobalReference.Default.EGATLUDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VT_MemberTableAdapter" GeneratorDataComponentClassName="VT_MemberTableAdapter" Name="VT_Member" UserDataComponentName="VT_MemberTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EGATLUDBConnectionString (MySettings)" DbObjectName="EGATLUDB.dbo.VT_Member" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Member_Id, Membertype_Id, Membertype, Member_Date, Mainmember_Id, Title_Id, Title, Member_Firstname, Member_Lastname, Position_Id, Position, Section_Id, Section, Member_Addr, District_Id, Cardtype_Id, Cardtype, Idcard_No, Home_Telno, Mobile_No, Member_Birthdate, Gender, Nation_Id, Nation, Religion_Id, Religion, Race_Id, Race, Remarkaddrformold FROM dbo.VT_Member</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Member_Id" DataSetColumn="Member_Id" />
+              <Mapping SourceColumn="Membertype_Id" DataSetColumn="Membertype_Id" />
+              <Mapping SourceColumn="Membertype" DataSetColumn="Membertype" />
+              <Mapping SourceColumn="Member_Date" DataSetColumn="Member_Date" />
+              <Mapping SourceColumn="Mainmember_Id" DataSetColumn="Mainmember_Id" />
+              <Mapping SourceColumn="Title_Id" DataSetColumn="Title_Id" />
+              <Mapping SourceColumn="Title" DataSetColumn="Title" />
+              <Mapping SourceColumn="Member_Firstname" DataSetColumn="Member_Firstname" />
+              <Mapping SourceColumn="Member_Lastname" DataSetColumn="Member_Lastname" />
+              <Mapping SourceColumn="Position_Id" DataSetColumn="Position_Id" />
+              <Mapping SourceColumn="Position" DataSetColumn="Position" />
+              <Mapping SourceColumn="Section_Id" DataSetColumn="Section_Id" />
+              <Mapping SourceColumn="Section" DataSetColumn="Section" />
+              <Mapping SourceColumn="Member_Addr" DataSetColumn="Member_Addr" />
+              <Mapping SourceColumn="District_Id" DataSetColumn="District_Id" />
+              <Mapping SourceColumn="Cardtype_Id" DataSetColumn="Cardtype_Id" />
+              <Mapping SourceColumn="Cardtype" DataSetColumn="Cardtype" />
+              <Mapping SourceColumn="Idcard_No" DataSetColumn="Idcard_No" />
+              <Mapping SourceColumn="Home_Telno" DataSetColumn="Home_Telno" />
+              <Mapping SourceColumn="Mobile_No" DataSetColumn="Mobile_No" />
+              <Mapping SourceColumn="Member_Birthdate" DataSetColumn="Member_Birthdate" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="Nation_Id" DataSetColumn="Nation_Id" />
+              <Mapping SourceColumn="Nation" DataSetColumn="Nation" />
+              <Mapping SourceColumn="Religion_Id" DataSetColumn="Religion_Id" />
+              <Mapping SourceColumn="Religion" DataSetColumn="Religion" />
+              <Mapping SourceColumn="Race_Id" DataSetColumn="Race_Id" />
+              <Mapping SourceColumn="Race" DataSetColumn="Race" />
+              <Mapping SourceColumn="Remarkaddrformold" DataSetColumn="Remarkaddrformold" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DsNewmember" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DsNewmember" msprop:Generator_UserDSName="DsNewmember">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VT_Member" msprop:Generator_TableClassName="VT_MemberDataTable" msprop:Generator_TableVarName="tableVT_Member" msprop:Generator_TablePropName="VT_Member" msprop:Generator_RowDeletingName="VT_MemberRowDeleting" msprop:Generator_RowChangingName="VT_MemberRowChanging" msprop:Generator_RowEvHandlerName="VT_MemberRowChangeEventHandler" msprop:Generator_RowDeletedName="VT_MemberRowDeleted" msprop:Generator_UserTableName="VT_Member" msprop:Generator_RowChangedName="VT_MemberRowChanged" msprop:Generator_RowEvArgName="VT_MemberRowChangeEvent" msprop:Generator_RowClassName="VT_MemberRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Member_Id" msprop:Generator_ColumnVarNameInTable="columnMember_Id" msprop:Generator_ColumnPropNameInRow="Member_Id" msprop:Generator_ColumnPropNameInTable="Member_IdColumn" msprop:Generator_UserColumnName="Member_Id">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Membertype_Id" msprop:Generator_ColumnVarNameInTable="columnMembertype_Id" msprop:Generator_ColumnPropNameInRow="Membertype_Id" msprop:Generator_ColumnPropNameInTable="Membertype_IdColumn" msprop:Generator_UserColumnName="Membertype_Id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Membertype" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMembertype" msprop:Generator_ColumnPropNameInRow="Membertype" msprop:Generator_ColumnPropNameInTable="MembertypeColumn" msprop:Generator_UserColumnName="Membertype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Member_Date" msprop:Generator_ColumnVarNameInTable="columnMember_Date" msprop:Generator_ColumnPropNameInRow="Member_Date" msprop:Generator_ColumnPropNameInTable="Member_DateColumn" msprop:Generator_UserColumnName="Member_Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Mainmember_Id" msprop:Generator_ColumnVarNameInTable="columnMainmember_Id" msprop:Generator_ColumnPropNameInRow="Mainmember_Id" msprop:Generator_ColumnPropNameInTable="Mainmember_IdColumn" msprop:Generator_UserColumnName="Mainmember_Id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Title_Id" msprop:Generator_ColumnVarNameInTable="columnTitle_Id" msprop:Generator_ColumnPropNameInRow="Title_Id" msprop:Generator_ColumnPropNameInTable="Title_IdColumn" msprop:Generator_UserColumnName="Title_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Title" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnPropNameInTable="TitleColumn" msprop:Generator_UserColumnName="Title" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Member_Firstname" msprop:Generator_ColumnVarNameInTable="columnMember_Firstname" msprop:Generator_ColumnPropNameInRow="Member_Firstname" msprop:Generator_ColumnPropNameInTable="Member_FirstnameColumn" msprop:Generator_UserColumnName="Member_Firstname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Member_Lastname" msprop:Generator_ColumnVarNameInTable="columnMember_Lastname" msprop:Generator_ColumnPropNameInRow="Member_Lastname" msprop:Generator_ColumnPropNameInTable="Member_LastnameColumn" msprop:Generator_UserColumnName="Member_Lastname" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Position_Id" msprop:Generator_ColumnVarNameInTable="columnPosition_Id" msprop:Generator_ColumnPropNameInRow="Position_Id" msprop:Generator_ColumnPropNameInTable="Position_IdColumn" msprop:Generator_UserColumnName="Position_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Position" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" msprop:Generator_UserColumnName="Position" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Section_Id" msprop:Generator_ColumnVarNameInTable="columnSection_Id" msprop:Generator_ColumnPropNameInRow="Section_Id" msprop:Generator_ColumnPropNameInTable="Section_IdColumn" msprop:Generator_UserColumnName="Section_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Section" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSection" msprop:Generator_ColumnPropNameInRow="Section" msprop:Generator_ColumnPropNameInTable="SectionColumn" msprop:Generator_UserColumnName="Section" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Member_Addr" msprop:Generator_ColumnVarNameInTable="columnMember_Addr" msprop:Generator_ColumnPropNameInRow="Member_Addr" msprop:Generator_ColumnPropNameInTable="Member_AddrColumn" msprop:Generator_UserColumnName="Member_Addr" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="District_Id" msprop:Generator_ColumnVarNameInTable="columnDistrict_Id" msprop:Generator_ColumnPropNameInRow="District_Id" msprop:Generator_ColumnPropNameInTable="District_IdColumn" msprop:Generator_UserColumnName="District_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Cardtype_Id" msprop:Generator_ColumnVarNameInTable="columnCardtype_Id" msprop:Generator_ColumnPropNameInRow="Cardtype_Id" msprop:Generator_ColumnPropNameInTable="Cardtype_IdColumn" msprop:Generator_UserColumnName="Cardtype_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Cardtype" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCardtype" msprop:Generator_ColumnPropNameInRow="Cardtype" msprop:Generator_ColumnPropNameInTable="CardtypeColumn" msprop:Generator_UserColumnName="Cardtype" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Idcard_No" msprop:Generator_ColumnVarNameInTable="columnIdcard_No" msprop:Generator_ColumnPropNameInRow="Idcard_No" msprop:Generator_ColumnPropNameInTable="Idcard_NoColumn" msprop:Generator_UserColumnName="Idcard_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Home_Telno" msprop:Generator_ColumnVarNameInTable="columnHome_Telno" msprop:Generator_ColumnPropNameInRow="Home_Telno" msprop:Generator_ColumnPropNameInTable="Home_TelnoColumn" msprop:Generator_UserColumnName="Home_Telno" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Mobile_No" msprop:Generator_ColumnVarNameInTable="columnMobile_No" msprop:Generator_ColumnPropNameInRow="Mobile_No" msprop:Generator_ColumnPropNameInTable="Mobile_NoColumn" msprop:Generator_UserColumnName="Mobile_No" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Member_Birthdate" msprop:Generator_ColumnVarNameInTable="columnMember_Birthdate" msprop:Generator_ColumnPropNameInRow="Member_Birthdate" msprop:Generator_ColumnPropNameInTable="Member_BirthdateColumn" msprop:Generator_UserColumnName="Member_Birthdate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender" type="xs:int" minOccurs="0" />
+              <xs:element name="Nation_Id" msprop:Generator_ColumnVarNameInTable="columnNation_Id" msprop:Generator_ColumnPropNameInRow="Nation_Id" msprop:Generator_ColumnPropNameInTable="Nation_IdColumn" msprop:Generator_UserColumnName="Nation_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Nation" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNation" msprop:Generator_ColumnPropNameInRow="Nation" msprop:Generator_ColumnPropNameInTable="NationColumn" msprop:Generator_UserColumnName="Nation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Religion_Id" msprop:Generator_ColumnVarNameInTable="columnReligion_Id" msprop:Generator_ColumnPropNameInRow="Religion_Id" msprop:Generator_ColumnPropNameInTable="Religion_IdColumn" msprop:Generator_UserColumnName="Religion_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Religion" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnReligion" msprop:Generator_ColumnPropNameInRow="Religion" msprop:Generator_ColumnPropNameInTable="ReligionColumn" msprop:Generator_UserColumnName="Religion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Race_Id" msprop:Generator_ColumnVarNameInTable="columnRace_Id" msprop:Generator_ColumnPropNameInRow="Race_Id" msprop:Generator_ColumnPropNameInTable="Race_IdColumn" msprop:Generator_UserColumnName="Race_Id" type="xs:int" minOccurs="0" />
+              <xs:element name="Race" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRace" msprop:Generator_ColumnPropNameInRow="Race" msprop:Generator_ColumnPropNameInTable="RaceColumn" msprop:Generator_UserColumnName="Race" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Remarkaddrformold" msprop:Generator_ColumnVarNameInTable="columnRemarkaddrformold" msprop:Generator_ColumnPropNameInRow="Remarkaddrformold" msprop:Generator_ColumnPropNameInTable="RemarkaddrformoldColumn" msprop:Generator_UserColumnName="Remarkaddrformold" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="450" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VT_Member" />
+      <xs:field xpath="mstns:Member_Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
