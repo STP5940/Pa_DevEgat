@@ -40,7 +40,7 @@ Public Class FormCommitteeTerminate
 
         ReportViewer1.Reset()
         Dim Rds As New ReportDataSource()
-        Rds.Name = "DataSet2"
+        Rds.Name = "DataSet1"
         Rds.Value = Tmasterrptdt
         ReportViewer1.LocalReport.DataSources.Add(Rds)
         ReportViewer1.LocalReport.ReportEmbeddedResource = "Egatlums.RptCommitteeterminate.rdlc"

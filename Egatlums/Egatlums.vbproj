@@ -114,6 +114,11 @@
     <Compile Include="Report\CommitteeReport\FormCommitteeReport.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\CommitteeTeam\DsCommitteeteam.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCommitteeteam.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\CommitteeTeam\FormCommitteeTeam.Designer.vb">
       <DependentUpon>FormCommitteeTeam.vb</DependentUpon>
     </Compile>
@@ -239,6 +244,17 @@
     <EmbeddedResource Include="Report\Sample\Rptuserlogs.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Report\CommitteeTeam\DsCommitteeteam.xsc">
+      <DependentUpon>DsCommitteeteam.xsd</DependentUpon>
+    </None>
+    <None Include="Report\CommitteeTeam\DsCommitteeteam.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCommitteeteam.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\CommitteeTeam\DsCommitteeteam.xss">
+      <DependentUpon>DsCommitteeteam.xsd</DependentUpon>
+    </None>
     <None Include="Report\CommitteeTerminate\DsCommitteeterminate.xsc">
       <DependentUpon>DsCommitteeterminate.xsd</DependentUpon>
     </None>

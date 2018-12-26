@@ -18,7 +18,7 @@
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DataSet2">
+    <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DsCommitteeterminate</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -547,7 +547,7 @@
                 </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
-            <DataSetName>DataSet2</DataSetName>
+            <DataSetName>DataSet1</DataSetName>
             <Top>0.00125in</Top>
             <Left>0.17708in</Left>
             <Height>0.5in</Height>
