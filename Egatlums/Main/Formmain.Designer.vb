@@ -28,10 +28,17 @@ Partial Class Formmain
         Me.FormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.CofigDatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ReportToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeCancelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeAppointToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeTerminateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeTeamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommitteeReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,7 +59,7 @@ Partial Class Formmain
         '
         'ReportToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportToolStripMenuItem1, Me.ReportToolStripMenuItem2})
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportToolStripMenuItem1, Me.ReportToolStripMenuItem2, Me.CommitteeNewToolStripMenuItem, Me.CommitteeCancelToolStripMenuItem, Me.CommitteeAppointToolStripMenuItem, Me.CommitteeNoteToolStripMenuItem, Me.CommitteeTerminateToolStripMenuItem, Me.CommitteeTeamToolStripMenuItem, Me.CommitteeReportToolStripMenuItem})
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReportToolStripMenuItem.Text = "Report"
@@ -60,8 +67,14 @@ Partial Class Formmain
         'ReportToolStripMenuItem1
         '
         Me.ReportToolStripMenuItem1.Name = "ReportToolStripMenuItem1"
-        Me.ReportToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ReportToolStripMenuItem1.Size = New System.Drawing.Size(190, 22)
         Me.ReportToolStripMenuItem1.Text = "Report sample"
+        '
+        'ReportToolStripMenuItem2
+        '
+        Me.ReportToolStripMenuItem2.Name = "ReportToolStripMenuItem2"
+        Me.ReportToolStripMenuItem2.Size = New System.Drawing.Size(190, 22)
+        Me.ReportToolStripMenuItem2.Text = "New members"
         '
         'CofigDatabaseToolStripMenuItem
         '
@@ -78,11 +91,47 @@ Partial Class Formmain
         Me.Panel1.Size = New System.Drawing.Size(1008, 705)
         Me.Panel1.TabIndex = 9
         '
-        'ReportToolStripMenuItem2
+        'CommitteeNewToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem2.Name = "ReportToolStripMenuItem2"
-        Me.ReportToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
-        Me.ReportToolStripMenuItem2.Text = "New members"
+        Me.CommitteeNewToolStripMenuItem.Name = "CommitteeNewToolStripMenuItem"
+        Me.CommitteeNewToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeNewToolStripMenuItem.Text = "Committee New"
+        '
+        'CommitteeCancelToolStripMenuItem
+        '
+        Me.CommitteeCancelToolStripMenuItem.Name = "CommitteeCancelToolStripMenuItem"
+        Me.CommitteeCancelToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeCancelToolStripMenuItem.Text = "Committee Cancel"
+        '
+        'CommitteeAppointToolStripMenuItem
+        '
+        Me.CommitteeAppointToolStripMenuItem.Name = "CommitteeAppointToolStripMenuItem"
+        Me.CommitteeAppointToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeAppointToolStripMenuItem.Text = "Committee Appoint"
+        '
+        'CommitteeNoteToolStripMenuItem
+        '
+        Me.CommitteeNoteToolStripMenuItem.Name = "CommitteeNoteToolStripMenuItem"
+        Me.CommitteeNoteToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeNoteToolStripMenuItem.Text = "Committee Note"
+        '
+        'CommitteeTerminateToolStripMenuItem
+        '
+        Me.CommitteeTerminateToolStripMenuItem.Name = "CommitteeTerminateToolStripMenuItem"
+        Me.CommitteeTerminateToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeTerminateToolStripMenuItem.Text = "Committee Terminate"
+        '
+        'CommitteeTeamToolStripMenuItem
+        '
+        Me.CommitteeTeamToolStripMenuItem.Name = "CommitteeTeamToolStripMenuItem"
+        Me.CommitteeTeamToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeTeamToolStripMenuItem.Text = "Committee Team"
+        '
+        'CommitteeReportToolStripMenuItem
+        '
+        Me.CommitteeReportToolStripMenuItem.Name = "CommitteeReportToolStripMenuItem"
+        Me.CommitteeReportToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeReportToolStripMenuItem.Text = "Committee Report"
         '
         'Formmain
         '
@@ -110,4 +159,11 @@ Partial Class Formmain
     Friend WithEvents Panel1 As Panel
     Friend WithEvents CofigDatabaseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ReportToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents CommitteeNewToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeCancelToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeAppointToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeNoteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeTerminateToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeTeamToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeReportToolStripMenuItem As ToolStripMenuItem
 End Class

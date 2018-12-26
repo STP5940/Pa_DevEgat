@@ -33,7 +33,31 @@ Public Class Formmain
         Gbusrprofname = My.User.Name
     End Sub
 
-    Private Sub MenuStrip_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip.ItemClicked
+    Private Sub CommitteeNewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeNewToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeNew, Panel1)
+    End Sub
 
+    Private Sub CommitteeCancelToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeCancelToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeCancel, Panel1)
+    End Sub
+
+    Private Sub CommitteeAppointToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeAppointToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeAppoint, Panel1)
+    End Sub
+
+    Private Sub CommitteeNoteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeNoteToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeNote, Panel1)
+    End Sub
+
+    Private Sub CommitteeTerminateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeTerminateToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeTerminate, Panel1)
+    End Sub
+
+    Private Sub CommitteeTeamToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeTeamToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeTeam, Panel1)
+    End Sub
+
+    Private Sub CommitteeReportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeReportToolStripMenuItem.Click
+        Showformonpanel(FormCommitteeReport, Panel1)
     End Sub
 End Class
