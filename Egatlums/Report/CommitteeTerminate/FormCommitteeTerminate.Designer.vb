@@ -70,7 +70,7 @@ Partial Class FormCommitteeTerminate
         'ReportViewer1
         '
         Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Egatlums.RptNewmember.rdlc"
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "Egatlums.RptCommitteeterminate.rdlc"
         Me.ReportViewer1.Location = New System.Drawing.Point(3, 74)
         Me.ReportViewer1.Name = "ReportViewer1"
         Me.ReportViewer1.ShowContextMenu = False
