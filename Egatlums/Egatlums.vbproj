@@ -135,6 +135,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DsCommitteeterminate.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Report\CommitteeTerminate\DsCommitteeterminate.vb">
+      <DependentUpon>DsCommitteeterminate.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\CommitteeTerminate\FormCommitteeTerminate.Designer.vb">
       <DependentUpon>FormCommitteeTerminate.vb</DependentUpon>
     </Compile>

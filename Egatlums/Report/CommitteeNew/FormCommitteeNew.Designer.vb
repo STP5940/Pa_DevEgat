@@ -23,15 +23,16 @@ Partial Class FormCommitteeNew
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.WhereDate = New System.Windows.Forms.CheckBox()
-        Me.WhereAll = New System.Windows.Forms.CheckBox()
-        Me.TxtWhereDate = New System.Windows.Forms.DateTimePicker()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.TxtWhere = New System.Windows.Forms.TextBox()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.Tsbclose = New System.Windows.Forms.ToolStripButton()
         Me.Tsbreports = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
+        Me.Tstcnotdate = New Egatlib.Ctrltoolstripcheckbox()
+        Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
+        Me.Tstcnottime = New Egatlib.Ctrltoolstripcheckbox()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
         Me.GroupBox1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -39,11 +40,6 @@ Partial Class FormCommitteeNew
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.GroupBox1.Controls.Add(Me.WhereDate)
-        Me.GroupBox1.Controls.Add(Me.WhereAll)
-        Me.GroupBox1.Controls.Add(Me.TxtWhereDate)
-        Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Controls.Add(Me.TxtWhere)
         Me.GroupBox1.Controls.Add(Me.ReportViewer1)
         Me.GroupBox1.Controls.Add(Me.ToolStrip1)
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -54,61 +50,6 @@ Partial Class FormCommitteeNew
         Me.GroupBox1.TabIndex = 10
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "เงื่อนไขในการแสดงรายงาน"
-        '
-        'WhereDate
-        '
-        Me.WhereDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WhereDate.AutoSize = True
-        Me.WhereDate.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.WhereDate.Location = New System.Drawing.Point(668, 38)
-        Me.WhereDate.Name = "WhereDate"
-        Me.WhereDate.Size = New System.Drawing.Size(111, 24)
-        Me.WhereDate.TabIndex = 6
-        Me.WhereDate.Text = "ค้นหาจากวันที่"
-        Me.WhereDate.UseVisualStyleBackColor = False
-        '
-        'WhereAll
-        '
-        Me.WhereAll.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.WhereAll.AutoSize = True
-        Me.WhereAll.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.WhereAll.Checked = True
-        Me.WhereAll.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.WhereAll.Location = New System.Drawing.Point(593, 38)
-        Me.WhereAll.Name = "WhereAll"
-        Me.WhereAll.Size = New System.Drawing.Size(69, 24)
-        Me.WhereAll.TabIndex = 5
-        Me.WhereAll.Text = "ทั้งหมด"
-        Me.WhereAll.UseVisualStyleBackColor = False
-        '
-        'TxtWhereDate
-        '
-        Me.TxtWhereDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtWhereDate.CustomFormat = "MMMM yyyy"
-        Me.TxtWhereDate.Enabled = False
-        Me.TxtWhereDate.Location = New System.Drawing.Point(785, 36)
-        Me.TxtWhereDate.Name = "TxtWhereDate"
-        Me.TxtWhereDate.Size = New System.Drawing.Size(167, 27)
-        Me.TxtWhereDate.TabIndex = 4
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(535, 39)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 20)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "ค้นหา"
-        '
-        'TxtWhere
-        '
-        Me.TxtWhere.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtWhere.Location = New System.Drawing.Point(951, 36)
-        Me.TxtWhere.Name = "TxtWhere"
-        Me.TxtWhere.Size = New System.Drawing.Size(10, 27)
-        Me.TxtWhere.TabIndex = 2
-        Me.TxtWhere.Visible = False
         '
         'ReportViewer1
         '
@@ -122,7 +63,7 @@ Partial Class FormCommitteeNew
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tsbclose, Me.Tsbreports})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tsbclose, Me.Tsbreports, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.Tstcnotdate, Me.ToolStripLabel4, Me.Tstcnottime, Me.ToolStripLabel1})
         Me.ToolStrip1.Location = New System.Drawing.Point(3, 23)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1053, 51)
@@ -153,6 +94,58 @@ Partial Class FormCommitteeNew
         Me.Tsbreports.Text = "รายงาน"
         Me.Tsbreports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 51)
+        '
+        'ToolStripLabel2
+        '
+        Me.ToolStripLabel2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel2.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel2.Name = "ToolStripLabel2"
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(13, 48)
+        Me.ToolStripLabel2.Text = " "
+        '
+        'Tstcnotdate
+        '
+        Me.Tstcnotdate.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.Tstcnotdate.BackColor = System.Drawing.Color.Transparent
+        Me.Tstcnotdate.Checked = False
+        Me.Tstcnotdate.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tstcnotdate.Name = "Tstcnotdate"
+        Me.Tstcnotdate.Size = New System.Drawing.Size(131, 48)
+        Me.Tstcnotdate.Text = "รายชื่อประจำเดือน"
+        Me.Tstcnotdate.ToolStripCheckBoxEnabled = True
+        '
+        'ToolStripLabel4
+        '
+        Me.ToolStripLabel4.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel4.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel4.Name = "ToolStripLabel4"
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(13, 48)
+        Me.ToolStripLabel4.Text = " "
+        '
+        'Tstcnottime
+        '
+        Me.Tstcnottime.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.Tstcnottime.BackColor = System.Drawing.Color.Transparent
+        Me.Tstcnottime.Checked = True
+        Me.Tstcnottime.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Tstcnottime.Name = "Tstcnottime"
+        Me.Tstcnottime.Size = New System.Drawing.Size(107, 48)
+        Me.Tstcnottime.Text = "รายชื่อทั้งหมด"
+        Me.Tstcnottime.ToolStripCheckBoxEnabled = True
+        '
+        'ToolStripLabel1
+        '
+        Me.ToolStripLabel1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel1.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.ToolStripLabel1.Name = "ToolStripLabel1"
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(55, 48)
+        Me.ToolStripLabel1.Text = "ค้นหา   "
+        '
         'FormCommitteeNew
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -170,13 +163,14 @@ Partial Class FormCommitteeNew
     End Sub
 
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents TxtWhere As TextBox
     Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents Tsbclose As ToolStripButton
     Friend WithEvents Tsbreports As ToolStripButton
-    Friend WithEvents TxtWhereDate As DateTimePicker
-    Friend WithEvents WhereDate As CheckBox
-    Friend WithEvents WhereAll As CheckBox
+    Friend WithEvents Tstcnottime As Egatlib.Ctrltoolstripcheckbox
+    Friend WithEvents ToolStripLabel4 As ToolStripLabel
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripLabel1 As ToolStripLabel
+    Friend WithEvents ToolStripLabel2 As ToolStripLabel
+    Friend WithEvents Tstcnotdate As Egatlib.Ctrltoolstripcheckbox
 End Class

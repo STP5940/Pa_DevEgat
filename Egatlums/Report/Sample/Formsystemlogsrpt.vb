@@ -67,7 +67,7 @@ Public Class Formsystemlogsrpt
         End If
         Tmasterrptdt = New DataTable
         Tmasterrptdt = SQLCommand("SELECT Updateby_Usrgrpid,Usrgroup_Name,Updateby_Usrid,Updateby_Usrname,Menu_Id,Menu_Th,Doc_Id,Update_Type,
-                                    Update_Details,Update_Time,Updatefrom_Comname,Updateform_Usrprofile FROM VT_Syslog 
+                                    Update_Details,Update_Time,Updatefrom_Comname,Updateform_Usrprofile FROM VT_Sys_Syslog 
                                     WHERE Updateby_Usrgrpid <> '000' " & Tcomtext1 & Tcomtext2 & Tcomtext3)
         ReportViewer1.Reset()
         Dim Rds As New ReportDataSource()
