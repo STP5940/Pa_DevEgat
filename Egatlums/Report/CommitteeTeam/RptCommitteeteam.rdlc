@@ -162,8 +162,8 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DsCommitteeteam</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\Report\CommitteeTeam\DsCommitteeteam.xsd</rd:SchemaPath>
+        <rd:DataSetName>DsCommitteereport</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\Report\CommitteeReport\DsCommitteereport.xsd</rd:SchemaPath>
         <rd:TableName>Committee</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
