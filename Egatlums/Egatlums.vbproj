@@ -107,6 +107,11 @@
     <Compile Include="Report\CommitteeNew\FormCommitteeNew.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\CommitteeNote\DsCommitteenote.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCommitteenote.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\CommitteeNote\FormCommitteeNote.Designer.vb">
       <DependentUpon>FormCommitteeNote.vb</DependentUpon>
     </Compile>
@@ -267,6 +272,17 @@
     </None>
     <None Include="Report\CommitteeNew\DsCommitteenew.xss">
       <DependentUpon>DsCommitteenew.xsd</DependentUpon>
+    </None>
+    <None Include="Report\CommitteeNote\DsCommitteenote.xsc">
+      <DependentUpon>DsCommitteenote.xsd</DependentUpon>
+    </None>
+    <None Include="Report\CommitteeNote\DsCommitteenote.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCommitteenote.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\CommitteeNote\DsCommitteenote.xss">
+      <DependentUpon>DsCommitteenote.xsd</DependentUpon>
     </None>
     <None Include="Report\CommitteeReport\DsCommitteereport.xsc">
       <DependentUpon>DsCommitteereport.xsd</DependentUpon>
