@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormCommitteeNew
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,12 @@ Partial Class FormCommitteeNew
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.WhereDate = New System.Windows.Forms.CheckBox()
+        Me.WhereAll = New System.Windows.Forms.CheckBox()
+        Me.TxtWhereDate = New System.Windows.Forms.DateTimePicker()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TxtWhere = New System.Windows.Forms.TextBox()
         Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
@@ -36,6 +39,9 @@ Partial Class FormCommitteeNew
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.GroupBox1.Controls.Add(Me.WhereDate)
+        Me.GroupBox1.Controls.Add(Me.WhereAll)
+        Me.GroupBox1.Controls.Add(Me.TxtWhereDate)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.TxtWhere)
         Me.GroupBox1.Controls.Add(Me.ReportViewer1)
@@ -49,11 +55,47 @@ Partial Class FormCommitteeNew
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "เงื่อนไขในการแสดงรายงาน"
         '
+        'WhereDate
+        '
+        Me.WhereDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WhereDate.AutoSize = True
+        Me.WhereDate.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.WhereDate.Location = New System.Drawing.Point(668, 38)
+        Me.WhereDate.Name = "WhereDate"
+        Me.WhereDate.Size = New System.Drawing.Size(111, 24)
+        Me.WhereDate.TabIndex = 6
+        Me.WhereDate.Text = "ค้นหาจากวันที่"
+        Me.WhereDate.UseVisualStyleBackColor = False
+        '
+        'WhereAll
+        '
+        Me.WhereAll.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.WhereAll.AutoSize = True
+        Me.WhereAll.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.WhereAll.Checked = True
+        Me.WhereAll.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.WhereAll.Location = New System.Drawing.Point(593, 38)
+        Me.WhereAll.Name = "WhereAll"
+        Me.WhereAll.Size = New System.Drawing.Size(69, 24)
+        Me.WhereAll.TabIndex = 5
+        Me.WhereAll.Text = "ทั้งหมด"
+        Me.WhereAll.UseVisualStyleBackColor = False
+        '
+        'TxtWhereDate
+        '
+        Me.TxtWhereDate.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TxtWhereDate.CustomFormat = "MMMM yyyy"
+        Me.TxtWhereDate.Enabled = False
+        Me.TxtWhereDate.Location = New System.Drawing.Point(785, 36)
+        Me.TxtWhereDate.Name = "TxtWhereDate"
+        Me.TxtWhereDate.Size = New System.Drawing.Size(167, 27)
+        Me.TxtWhereDate.TabIndex = 4
+        '
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(683, 44)
+        Me.Label1.Location = New System.Drawing.Point(535, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(43, 20)
         Me.Label1.TabIndex = 3
@@ -62,10 +104,11 @@ Partial Class FormCommitteeNew
         'TxtWhere
         '
         Me.TxtWhere.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TxtWhere.Location = New System.Drawing.Point(754, 41)
+        Me.TxtWhere.Location = New System.Drawing.Point(951, 36)
         Me.TxtWhere.Name = "TxtWhere"
-        Me.TxtWhere.Size = New System.Drawing.Size(180, 27)
+        Me.TxtWhere.Size = New System.Drawing.Size(10, 27)
         Me.TxtWhere.TabIndex = 2
+        Me.TxtWhere.Visible = False
         '
         'ReportViewer1
         '
@@ -133,4 +176,7 @@ Partial Class FormCommitteeNew
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents Tsbclose As ToolStripButton
     Friend WithEvents Tsbreports As ToolStripButton
+    Friend WithEvents TxtWhereDate As DateTimePicker
+    Friend WithEvents WhereDate As CheckBox
+    Friend WithEvents WhereAll As CheckBox
 End Class
