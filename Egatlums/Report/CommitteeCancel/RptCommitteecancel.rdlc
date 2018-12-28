@@ -9,16 +9,59 @@
       </ConnectionProperties>
       <rd:DataSourceID>714da055-dd10-4603-83ee-4ba43138ad66</rd:DataSourceID>
     </DataSource>
+    <DataSource Name="DsCommitteeterminate">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>3253b1a4-211e-4124-8a28-fdfb3ebd5f69</rd:DataSourceID>
+    </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DsNewmember</DataSourceName>
+        <DataSourceName>DsCommitteeterminate</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Member_Id">
-          <DataField>Member_Id</DataField>
+        <Field Name="Expr1">
+          <DataField>Expr1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Member_id">
+          <DataField>Member_id</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_TYPE">
+          <DataField>COM_TYPE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_StartDate">
+          <DataField>COM_StartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="COM_EndDate">
+          <DataField>COM_EndDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Remark">
+          <DataField>Remark</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_EndId">
+          <DataField>COM_EndId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_TYPE1">
+          <DataField>COM_TYPE1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_DESC">
+          <DataField>COM_DESC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Member_Id1">
+          <DataField>Member_Id1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Membertype_Id">
@@ -32,10 +75,6 @@
         <Field Name="Member_Date">
           <DataField>Member_Date</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Mainmember_Id">
-          <DataField>Mainmember_Id</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Title_Id">
           <DataField>Title_Id</DataField>
@@ -61,10 +100,6 @@
           <DataField>Position</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Section_Id">
-          <DataField>Section_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="Section">
           <DataField>Section</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -72,10 +107,6 @@
         <Field Name="Member_Addr">
           <DataField>Member_Addr</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="District_Id">
-          <DataField>District_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Cardtype_Id">
           <DataField>Cardtype_Id</DataField>
@@ -133,14 +164,18 @@
           <DataField>Remarkaddrformold</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Memberstatus_Id">
+          <DataField>Memberstatus_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DsNewmember</rd:DataSetName>
-        <rd:SchemaPath>G:\EGAT\2018_12_19\Egatlums\Egatlums\DsNewmember.xsd</rd:SchemaPath>
-        <rd:TableName>VT_Member</rd:TableName>
+        <rd:DataSetName>DsCommitteecancel</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\Report\CommitteeCancel\DsCommitteecancel.xsd</rd:SchemaPath>
+        <rd:TableName>Committee</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>VT_MemberTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>CommitteeTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
@@ -158,10 +193,13 @@
                   <Width>3.3831in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.83333in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>1.67708in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.50184in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -243,7 +281,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>ประเภท</Value>
+                                  <Value>ตำแหน่ง</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -276,7 +314,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>วันที่สมัคร</Value>
+                                  <Value>วันที่รับตำแหน่ง</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -300,6 +338,39 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>วันที่พ้นจากตำแหน่ง</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>CornflowerBlue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
@@ -307,20 +378,22 @@
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Member_Id">
+                        <Textbox Name="Member_id">
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Member_Id.Value</Value>
+                                  <Value>=Fields!Member_id.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Member_Id</rd:DefaultName>
+                          <rd:DefaultName>Member_id</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -342,7 +415,11 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Title.Value+Fields!Member_Firstname.Value+" "+Fields!Member_Lastname.Value</Value>
+                                  <Value xml:space="preserve">  </Value>
+                                  <Style />
+                                </TextRun>
+                                <TextRun>
+                                  <Value>=Fields!Title.Value+" "+Fields!Member_Firstname.Value+" "+Fields!Member_Lastname.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -365,21 +442,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Membertype">
+                        <Textbox Name="COM_DESC">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Membertype.Value</Value>
+                                  <Value>=Fields!COM_DESC.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Membertype</rd:DefaultName>
+                          <rd:DefaultName>COM_DESC</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -395,21 +472,55 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Member_Date1">
+                        <Textbox Name="COM_StartDate">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=FormatDateTime(Fields!Member_Date.Value)</Value>
+                                  <Value>=Fields!COM_StartDate.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Member_Date1</rd:DefaultName>
+                          <rd:DefaultName>COM_StartDate</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="COM_EndDate">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!COM_EndDate.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>COM_EndDate</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -433,6 +544,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -444,10 +556,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
-            <Top>0.00125in</Top>
-            <Left>0.17708in</Left>
+            <Top>0.1575in</Top>
+            <Left>0.93006in</Left>
             <Height>0.5in</Height>
-            <Width>6.50512in</Width>
+            <Width>9.51737in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -599,7 +711,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>รายงาน สมาชิก สร กฟผ</Value>
+                      <Value>รายงานการสิ้นสภาพ (อนุกรรมการ สร.กฟผ.)</Value>
                       <Style>
                         <FontSize>12pt</FontSize>
                         <FontWeight>Bold</FontWeight>

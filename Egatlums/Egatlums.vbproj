@@ -84,11 +84,21 @@
     <Compile Include="Configdb\Formdbconfig.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\CommitteeAppoint\DsCommitteeappoint.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCommitteeappoint.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\CommitteeAppoint\FormCommitteeAppoint.Designer.vb">
       <DependentUpon>FormCommitteeAppoint.vb</DependentUpon>
     </Compile>
     <Compile Include="Report\CommitteeAppoint\FormCommitteeAppoint.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CommitteeCancel\DsCommitteecancel.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCommitteecancel.xsd</DependentUpon>
     </Compile>
     <Compile Include="Report\CommitteeCancel\FormCommitteeCancel.Designer.vb">
       <DependentUpon>FormCommitteeCancel.vb</DependentUpon>
@@ -262,6 +272,28 @@
     <EmbeddedResource Include="Report\Sample\Rptuserlogs.rdlc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Report\CommitteeAppoint\DsCommitteeappoint.xsc">
+      <DependentUpon>DsCommitteeappoint.xsd</DependentUpon>
+    </None>
+    <None Include="Report\CommitteeAppoint\DsCommitteeappoint.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCommitteeappoint.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\CommitteeAppoint\DsCommitteeappoint.xss">
+      <DependentUpon>DsCommitteeappoint.xsd</DependentUpon>
+    </None>
+    <None Include="Report\CommitteeCancel\DsCommitteecancel.xsc">
+      <DependentUpon>DsCommitteecancel.xsd</DependentUpon>
+    </None>
+    <None Include="Report\CommitteeCancel\DsCommitteecancel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCommitteecancel.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\CommitteeCancel\DsCommitteecancel.xss">
+      <DependentUpon>DsCommitteecancel.xsd</DependentUpon>
+    </None>
     <None Include="Report\CommitteeNew\DsCommitteenew.xsc">
       <DependentUpon>DsCommitteenew.xsd</DependentUpon>
     </None>

@@ -6,7 +6,6 @@ Public Class FormCommitteeNew
     'Private WithEvents Dtpto As New DateTimePicker
     Private Sub FormCommitteeNew_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
-        'TxtWhereDate.ShowUpDown = True
         Dtpfm.CustomFormat = "MMMMyyyy"
         Dtpfm.Format = DateTimePickerFormat.Custom
         Controls.Add(Dtpfm)
@@ -14,14 +13,8 @@ Public Class FormCommitteeNew
         Dtpfm.Width = 160
         Me.ToolStrip1.Items.Insert(4, New ToolStripControlHost(Dtpfm))
         Me.ToolStrip1.Items(4).Alignment = ToolStripItemAlignment.Right
-        'Controls.Add(Dtpto)
-        'Dtpto.Value = Now
-        'Dtpto.Width = 160
-        'Me.ToolStrip1.Items.Insert(6, New ToolStripControlHost(Dtpto))
-        'Me.ToolStrip1.Items(6).Alignment = ToolStripItemAlignment.Right
-        Setauthorize()
         Dtpfm.Visible = False
-        'Dtpto.Visible = False
+        Setauthorize()
     End Sub
     Private Sub Tsbreports_Click(sender As Object, e As EventArgs) Handles Tsbreports.Click
         Dim Tcomtext1 As String
