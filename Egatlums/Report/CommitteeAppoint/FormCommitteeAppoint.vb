@@ -47,8 +47,8 @@ Public Class FormCommitteeAppoint
         Approve = "1"
 
         ' ============  Select List Area  ============ '
-        Dim WhereArea As String = If(ReArrayIDArea(CbListArea.SelectedIndex) <> "All",
-                       $"And (COM_Area.Area_id = '{ReArrayIDArea(CbListArea.SelectedIndex)}')", "")
+        Dim WhereArea As String = If(ReIDArea(CbListArea.SelectedIndex) <> "All",
+                       $"And (COM_Area.Area_id = '{ReIDArea(CbListArea.SelectedIndex)}')", "")
 
         ' ============  Where for TstclistNow Checked Is Committee Current agenda  ============ '
         TcomlistNow = $"convert(varchar, getdate(), 23) BETWEEN dbo.COM_Committee.COM_StartDate AND dbo.COM_Committee.COM_EndDate {WhereArea}"
@@ -196,7 +196,7 @@ Public Class FormCommitteeAppoint
     End Sub
 
     ' ============  Return ID for Select ComboBox CbListArea  ============ '
-    Private Function ReArrayIDArea(Order As Integer)
+    Private Function ReIDArea(Optional Order As Integer = 0)
         Dim PointArea As String = "All"
         Dim Tcom_area = New DataTable
         Tcom_area = SQLCommand("SELECT Area_id FROM COM_Area")

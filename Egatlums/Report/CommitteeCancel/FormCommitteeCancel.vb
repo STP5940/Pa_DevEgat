@@ -145,8 +145,11 @@ Public Class FormCommitteeCancel
         End If
     End Sub
 
-    ' ============  Start Sub Or Function  ============ '
+    ' <==========================================>
+    '<====   Start Sub Or Function $Pa_Dev>   ====>
+    ' <==========================================>
 
+    ' ============  Set authentication  ============ '
     Private Sub Setauthorize()
         If Gbexpau = False Then
             Me.ReportViewer1.ShowExportButton = False

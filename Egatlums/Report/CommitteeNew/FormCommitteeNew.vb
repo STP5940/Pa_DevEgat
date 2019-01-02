@@ -6,6 +6,8 @@ Public Class FormCommitteeNew
     'Private WithEvents Dtpto As New DateTimePicker
     Private Sub FormCommitteeNew_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
+
+        ' ============  Month Search  ============ '
         Dtpfm.CustomFormat = "MMMMyyyy"
         Dtpfm.Format = DateTimePickerFormat.Custom
         Controls.Add(Dtpfm)
@@ -14,6 +16,7 @@ Public Class FormCommitteeNew
         Me.ToolStrip1.Items.Insert(4, New ToolStripControlHost(Dtpfm))
         Me.ToolStrip1.Items(4).Alignment = ToolStripItemAlignment.Right
         Dtpfm.Visible = False
+
         Setauthorize()
     End Sub
     Private Sub Tsbreports_Click(sender As Object, e As EventArgs) Handles Tsbreports.Click
@@ -64,18 +67,6 @@ Public Class FormCommitteeNew
     Private Sub Tsbclose_Click(sender As Object, e As EventArgs) Handles Tsbclose.Click
         Me.Close()
     End Sub
-
-    '------------- Start Sub Or Function -------------'
-
-    Private Sub Setauthorize()
-        If Gbexpau = False Then
-            Me.ReportViewer1.ShowExportButton = False
-        End If
-        If Gbpriau = False Then
-            Me.ReportViewer1.ShowPrintButton = False
-        End If
-    End Sub
-
     Private Sub Tstcnottime_Click(sender As Object, e As EventArgs) Handles Tstcnottime.CheckedChanged
         If Tstcnottime.Checked = True Then
             Dtpfm.Enabled = False
@@ -94,6 +85,20 @@ Public Class FormCommitteeNew
     Private Sub Tstcnotdate_Click(sender As Object, e As EventArgs) Handles Tstcnotdate.CheckedChanged
         If Tstcnotdate.Checked = False Then
             Tstcnottime.Checked = True
+        End If
+    End Sub
+
+    ' <==========================================>
+    '<====   Start Sub Or Function $Pa_Dev>   ====>
+    ' <==========================================>
+
+    ' ============  Set authentication  ============ '
+    Private Sub Setauthorize()
+        If Gbexpau = False Then
+            Me.ReportViewer1.ShowExportButton = False
+        End If
+        If Gbpriau = False Then
+            Me.ReportViewer1.ShowPrintButton = False
         End If
     End Sub
 End Class
