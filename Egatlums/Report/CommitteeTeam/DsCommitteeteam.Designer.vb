@@ -351,6 +351,14 @@ Partial Public Class DsCommitteeteam
         
         Private columnRemarkaddrformold As Global.System.Data.DataColumn
         
+        Private columnCOM_Status_id As Global.System.Data.DataColumn
+        
+        Private columnArea_id As Global.System.Data.DataColumn
+        
+        Private columnCOM_Approve As Global.System.Data.DataColumn
+        
+        Private columnMemberstatus_Id As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -659,6 +667,38 @@ Partial Public Class DsCommitteeteam
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property COM_Status_idColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCOM_Status_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Area_idColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnArea_id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property COM_ApproveColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCOM_Approve
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property Memberstatus_IdColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnMemberstatus_Id
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -729,9 +769,13 @@ Partial Public Class DsCommitteeteam
                     ByVal Religion As String,  _
                     ByVal Race_Id As Integer,  _
                     ByVal Race As String,  _
-                    ByVal Remarkaddrformold As String) As CommitteeRow
+                    ByVal Remarkaddrformold As String,  _
+                    ByVal COM_Status_id As Integer,  _
+                    ByVal Area_id As String,  _
+                    ByVal COM_Approve As Boolean,  _
+                    ByVal Memberstatus_Id As Integer) As CommitteeRow
             Dim rowCommitteeRow As CommitteeRow = CType(Me.NewRow,CommitteeRow)
-            Dim columnValuesArray() As Object = New Object() {Member_id, COM_TYPE, COM_StartDate, COM_EndDate, Remark, COM_EndId, COM_TYPE1, COM_DESC, Member_Id1, Membertype_Id, Membertype, Member_Date, Title_Id, Title, Member_Firstname, Member_Lastname, Position_Id, Position, Section, Member_Addr, Cardtype_Id, Cardtype, Idcard_No, Home_Telno, Mobile_No, Member_Birthdate, Gender, Nation_Id, Nation, Religion_Id, Religion, Race_Id, Race, Remarkaddrformold}
+            Dim columnValuesArray() As Object = New Object() {Member_id, COM_TYPE, COM_StartDate, COM_EndDate, Remark, COM_EndId, COM_TYPE1, COM_DESC, Member_Id1, Membertype_Id, Membertype, Member_Date, Title_Id, Title, Member_Firstname, Member_Lastname, Position_Id, Position, Section, Member_Addr, Cardtype_Id, Cardtype, Idcard_No, Home_Telno, Mobile_No, Member_Birthdate, Gender, Nation_Id, Nation, Religion_Id, Religion, Race_Id, Race, Remarkaddrformold, COM_Status_id, Area_id, COM_Approve, Memberstatus_Id}
             rowCommitteeRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowCommitteeRow)
             Return rowCommitteeRow
@@ -794,6 +838,10 @@ Partial Public Class DsCommitteeteam
             Me.columnRace_Id = MyBase.Columns("Race_Id")
             Me.columnRace = MyBase.Columns("Race")
             Me.columnRemarkaddrformold = MyBase.Columns("Remarkaddrformold")
+            Me.columnCOM_Status_id = MyBase.Columns("COM_Status_id")
+            Me.columnArea_id = MyBase.Columns("Area_id")
+            Me.columnCOM_Approve = MyBase.Columns("COM_Approve")
+            Me.columnMemberstatus_Id = MyBase.Columns("Memberstatus_Id")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -867,12 +915,19 @@ Partial Public Class DsCommitteeteam
             MyBase.Columns.Add(Me.columnRace)
             Me.columnRemarkaddrformold = New Global.System.Data.DataColumn("Remarkaddrformold", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnRemarkaddrformold)
+            Me.columnCOM_Status_id = New Global.System.Data.DataColumn("COM_Status_id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCOM_Status_id)
+            Me.columnArea_id = New Global.System.Data.DataColumn("Area_id", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnArea_id)
+            Me.columnCOM_Approve = New Global.System.Data.DataColumn("COM_Approve", GetType(Boolean), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCOM_Approve)
+            Me.columnMemberstatus_Id = New Global.System.Data.DataColumn("Memberstatus_Id", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnMemberstatus_Id)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnMember_Id1, Me.columnMembertype_Id}, true))
             Me.columnMember_id.AllowDBNull = false
             Me.columnMember_id.MaxLength = 50
             Me.columnCOM_TYPE.AllowDBNull = false
             Me.columnCOM_TYPE.MaxLength = 50
-            Me.columnCOM_StartDate.AllowDBNull = false
             Me.columnRemark.MaxLength = 50
             Me.columnCOM_EndId.MaxLength = 10
             Me.columnCOM_TYPE1.AllowDBNull = false
@@ -905,6 +960,7 @@ Partial Public Class DsCommitteeteam
             Me.columnRace.ReadOnly = true
             Me.columnRace.MaxLength = 1
             Me.columnRemarkaddrformold.MaxLength = 450
+            Me.columnArea_id.MaxLength = 5
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -1075,7 +1131,11 @@ Partial Public Class DsCommitteeteam
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Property COM_StartDate() As Date
             Get
-                Return CType(Me(Me.tableCommittee.COM_StartDateColumn),Date)
+                Try 
+                    Return CType(Me(Me.tableCommittee.COM_StartDateColumn),Date)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'COM_StartDate' in table 'Committee' is DBNull.", e)
+                End Try
             End Get
             Set
                 Me(Me.tableCommittee.COM_StartDateColumn) = value
@@ -1537,6 +1597,78 @@ Partial Public Class DsCommitteeteam
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property COM_Status_id() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableCommittee.COM_Status_idColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'COM_Status_id' in table 'Committee' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCommittee.COM_Status_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Area_id() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCommittee.Area_idColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Area_id' in table 'Committee' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCommittee.Area_idColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property COM_Approve() As Boolean
+            Get
+                Try 
+                    Return CType(Me(Me.tableCommittee.COM_ApproveColumn),Boolean)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'COM_Approve' in table 'Committee' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCommittee.COM_ApproveColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Memberstatus_Id() As Integer
+            Get
+                Try 
+                    Return CType(Me(Me.tableCommittee.Memberstatus_IdColumn),Integer)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Memberstatus_Id' in table 'Committee' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCommittee.Memberstatus_IdColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCOM_StartDateNull() As Boolean
+            Return Me.IsNull(Me.tableCommittee.COM_StartDateColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCOM_StartDateNull()
+            Me(Me.tableCommittee.COM_StartDateColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsCOM_EndDateNull() As Boolean
             Return Me.IsNull(Me.tableCommittee.COM_EndDateColumn)
         End Function
@@ -1870,6 +2002,54 @@ Partial Public Class DsCommitteeteam
         Public Sub SetRemarkaddrformoldNull()
             Me(Me.tableCommittee.RemarkaddrformoldColumn) = Global.System.Convert.DBNull
         End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCOM_Status_idNull() As Boolean
+            Return Me.IsNull(Me.tableCommittee.COM_Status_idColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCOM_Status_idNull()
+            Me(Me.tableCommittee.COM_Status_idColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsArea_idNull() As Boolean
+            Return Me.IsNull(Me.tableCommittee.Area_idColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetArea_idNull()
+            Me(Me.tableCommittee.Area_idColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCOM_ApproveNull() As Boolean
+            Return Me.IsNull(Me.tableCommittee.COM_ApproveColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCOM_ApproveNull()
+            Me(Me.tableCommittee.COM_ApproveColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsMemberstatus_IdNull() As Boolean
+            Return Me.IsNull(Me.tableCommittee.Memberstatus_IdColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetMemberstatus_IdNull()
+            Me(Me.tableCommittee.Memberstatus_IdColumn) = Global.System.Convert.DBNull
+        End Sub
     End Class
     
     '''<summary>
@@ -2072,6 +2252,10 @@ Namespace DsCommitteeteamTableAdapters
             tableMapping.ColumnMappings.Add("Race_Id", "Race_Id")
             tableMapping.ColumnMappings.Add("Race", "Race")
             tableMapping.ColumnMappings.Add("Remarkaddrformold", "Remarkaddrformold")
+            tableMapping.ColumnMappings.Add("COM_Status_id", "COM_Status_id")
+            tableMapping.ColumnMappings.Add("Area_id", "Area_id")
+            tableMapping.ColumnMappings.Add("COM_Approve", "COM_Approve")
+            tableMapping.ColumnMappings.Add("Memberstatus_Id", "Memberstatus_Id")
             Me._adapter.TableMappings.Add(tableMapping)
         End Sub
         

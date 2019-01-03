@@ -27,6 +27,10 @@ Partial Class FormCommitteeAppoint
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.Tsbclose = New System.Windows.Forms.ToolStripButton()
         Me.Tsbreports = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CbListArea = New System.Windows.Forms.ToolStripComboBox()
+        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripLabel7 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel5 = New System.Windows.Forms.ToolStripLabel()
@@ -36,10 +40,6 @@ Partial Class FormCommitteeAppoint
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
         Me.TstclistAll = New Egatlib.Ctrltoolstripcheckbox()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.CbListArea = New System.Windows.Forms.ToolStripComboBox()
-        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel7 = New System.Windows.Forms.ToolStripLabel()
         Me.GroupBox1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -100,6 +100,35 @@ Partial Class FormCommitteeAppoint
         Me.Tsbreports.Size = New System.Drawing.Size(56, 48)
         Me.Tsbreports.Text = "รายงาน"
         Me.Tsbreports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 51)
+        '
+        'CbListArea
+        '
+        Me.CbListArea.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.CbListArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CbListArea.Name = "CbListArea"
+        Me.CbListArea.Size = New System.Drawing.Size(121, 51)
+        '
+        'ToolStripLabel6
+        '
+        Me.ToolStripLabel6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel6.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.ToolStripLabel6.Name = "ToolStripLabel6"
+        Me.ToolStripLabel6.Size = New System.Drawing.Size(84, 48)
+        Me.ToolStripLabel6.Text = "ประจำพื้นที่   "
+        '
+        'ToolStripLabel7
+        '
+        Me.ToolStripLabel7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel7.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel7.Name = "ToolStripLabel7"
+        Me.ToolStripLabel7.Size = New System.Drawing.Size(13, 48)
+        Me.ToolStripLabel7.Text = " "
         '
         'ToolStripSeparator1
         '
@@ -180,35 +209,6 @@ Partial Class FormCommitteeAppoint
         Me.ToolStripLabel1.Name = "ToolStripLabel1"
         Me.ToolStripLabel1.Size = New System.Drawing.Size(55, 48)
         Me.ToolStripLabel1.Text = "ค้นหา   "
-        '
-        'CbListArea
-        '
-        Me.CbListArea.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.CbListArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CbListArea.Name = "CbListArea"
-        Me.CbListArea.Size = New System.Drawing.Size(121, 51)
-        '
-        'ToolStripLabel6
-        '
-        Me.ToolStripLabel6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel6.Font = New System.Drawing.Font("Segoe UI", 11.25!)
-        Me.ToolStripLabel6.Name = "ToolStripLabel6"
-        Me.ToolStripLabel6.Size = New System.Drawing.Size(84, 48)
-        Me.ToolStripLabel6.Text = "ประจำพื้นที่   "
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 51)
-        '
-        'ToolStripLabel7
-        '
-        Me.ToolStripLabel7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
-        Me.ToolStripLabel7.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripLabel7.Name = "ToolStripLabel7"
-        Me.ToolStripLabel7.Size = New System.Drawing.Size(13, 48)
-        Me.ToolStripLabel7.Text = " "
         '
         'FormCommitteeAppoint
         '

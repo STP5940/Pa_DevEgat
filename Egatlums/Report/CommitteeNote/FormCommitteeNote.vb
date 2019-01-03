@@ -57,9 +57,11 @@ Public Class FormCommitteeNote
         Me.Close()
     End Sub
 
+    ' <==========================================>
+    '<====   Start Sub Or Function $Pa_Dev>   ====>
+    ' <==========================================>
 
     '------------- Sub Or Function -------------'
-
     Private Sub Setauthorize()
         If Gbexpau = False Then
             Me.ReportViewer1.ShowExportButton = False

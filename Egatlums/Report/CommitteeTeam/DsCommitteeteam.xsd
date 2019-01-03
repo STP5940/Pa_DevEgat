@@ -9,7 +9,7 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CommitteeTableAdapter" GeneratorDataComponentClassName="CommitteeTableAdapter" Name="Committee" UserDataComponentName="CommitteeTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="EGATLUDBConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="EGATLUDBConnectionString1 (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        COM_Committee.*, COM_Type.*, VT_Member.*
@@ -56,6 +56,10 @@ FROM            COM_Committee INNER JOIN
               <Mapping SourceColumn="Race_Id" DataSetColumn="Race_Id" />
               <Mapping SourceColumn="Race" DataSetColumn="Race" />
               <Mapping SourceColumn="Remarkaddrformold" DataSetColumn="Remarkaddrformold" />
+              <Mapping SourceColumn="COM_Status_id" DataSetColumn="COM_Status_id" />
+              <Mapping SourceColumn="Area_id" DataSetColumn="Area_id" />
+              <Mapping SourceColumn="COM_Approve" DataSetColumn="COM_Approve" />
+              <Mapping SourceColumn="Memberstatus_Id" DataSetColumn="Memberstatus_Id" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -84,7 +88,7 @@ FROM            COM_Committee INNER JOIN
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="COM_StartDate" msprop:Generator_ColumnVarNameInTable="columnCOM_StartDate" msprop:Generator_ColumnPropNameInRow="COM_StartDate" msprop:Generator_ColumnPropNameInTable="COM_StartDateColumn" msprop:Generator_UserColumnName="COM_StartDate" type="xs:dateTime" />
+              <xs:element name="COM_StartDate" msprop:Generator_ColumnVarNameInTable="columnCOM_StartDate" msprop:Generator_ColumnPropNameInRow="COM_StartDate" msprop:Generator_ColumnPropNameInTable="COM_StartDateColumn" msprop:Generator_UserColumnName="COM_StartDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="COM_EndDate" msprop:Generator_ColumnVarNameInTable="columnCOM_EndDate" msprop:Generator_ColumnPropNameInRow="COM_EndDate" msprop:Generator_ColumnPropNameInTable="COM_EndDateColumn" msprop:Generator_UserColumnName="COM_EndDate" type="xs:dateTime" minOccurs="0" />
               <xs:element name="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" msprop:Generator_UserColumnName="Remark" minOccurs="0">
                 <xs:simpleType>
@@ -242,6 +246,16 @@ FROM            COM_Committee INNER JOIN
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="COM_Status_id" msprop:Generator_ColumnVarNameInTable="columnCOM_Status_id" msprop:Generator_ColumnPropNameInRow="COM_Status_id" msprop:Generator_ColumnPropNameInTable="COM_Status_idColumn" msprop:Generator_UserColumnName="COM_Status_id" type="xs:int" minOccurs="0" />
+              <xs:element name="Area_id" msprop:Generator_ColumnVarNameInTable="columnArea_id" msprop:Generator_ColumnPropNameInRow="Area_id" msprop:Generator_ColumnPropNameInTable="Area_idColumn" msprop:Generator_UserColumnName="Area_id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COM_Approve" msprop:Generator_ColumnVarNameInTable="columnCOM_Approve" msprop:Generator_ColumnPropNameInRow="COM_Approve" msprop:Generator_ColumnPropNameInTable="COM_ApproveColumn" msprop:Generator_UserColumnName="COM_Approve" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Memberstatus_Id" msprop:Generator_ColumnVarNameInTable="columnMemberstatus_Id" msprop:Generator_ColumnPropNameInRow="Memberstatus_Id" msprop:Generator_ColumnPropNameInTable="Memberstatus_IdColumn" msprop:Generator_UserColumnName="Memberstatus_Id" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
