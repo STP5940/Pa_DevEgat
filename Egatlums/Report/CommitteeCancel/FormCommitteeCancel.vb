@@ -13,8 +13,8 @@ Public Class FormCommitteeCancel
         Controls.Add(Dtpfm)
         Dtpfm.Value = Now
         Dtpfm.Width = 160
-        Me.ToolStrip1.Items.Insert(5, New ToolStripControlHost(Dtpfm))
-        Me.ToolStrip1.Items(5).Alignment = ToolStripItemAlignment.Right
+        Me.ToolStrip1.Items.Insert(9, New ToolStripControlHost(Dtpfm))
+        Me.ToolStrip1.Items(9).Alignment = ToolStripItemAlignment.Right
         Dtpfm.Visible = False
 
         ' ============  To Date Search  ============ '
@@ -23,10 +23,11 @@ Public Class FormCommitteeCancel
         Controls.Add(Dtpto)
         Dtpto.Value = Now
         Dtpto.Width = 160
-        Me.ToolStrip1.Items.Insert(4, New ToolStripControlHost(Dtpto))
-        Me.ToolStrip1.Items(4).Alignment = ToolStripItemAlignment.Right
+        Me.ToolStrip1.Items.Insert(8, New ToolStripControlHost(Dtpto))
+        Me.ToolStrip1.Items(8).Alignment = ToolStripItemAlignment.Right
         Dtpto.Visible = False
 
+        CreateListStatus("SELECT COM_Status FROM COM_Status", "COM_Status")
         Setauthorize()
     End Sub
     Private Sub Tsbreports_Click(sender As Object, e As EventArgs) Handles Tsbreports.Click
@@ -49,10 +50,15 @@ Public Class FormCommitteeCancel
                           BETWEEN  '{Dtpfm.Value.ToString("yyyy-MM-dd").Substring(0, 7)}' 
                              AND '{Dtpto.Value.ToString("yyyy-MM-dd").Substring(0, 7)}')"
 
+        ' ============  Select List Area  ============ '
+        Dim WhereStatus As String = If(ReIDStatus("SELECT COM_Status_id FROM COM_Status", "COM_Status_id", CbListArea.SelectedIndex) <> "All",
+                       $"AND dbo.COM_Status.COM_Status_id = '{ReIDStatus("SELECT COM_Status_id FROM COM_Status", "COM_Status_id",
+                       CbListArea.SelectedIndex)}'", "")
+
         Tmasterrptdt = New DataTable
 
         If TstclistAll.Checked = True Then
-            Tmasterrptdt = SQLCommand("SELECT dbo.COM_Committee.Member_id, dbo.COM_Committee.COM_TYPE, dbo.VT_Member.Membertype,
+            Tmasterrptdt = SQLCommand($"SELECT dbo.COM_Committee.Member_id, dbo.COM_Committee.COM_TYPE, dbo.VT_Member.Membertype,
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 11) As COM_StartDate,
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_EndDate), 0, 11) As COM_EndDate, 
 							                  dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname, 
@@ -66,7 +72,7 @@ Public Class FormCommitteeCancel
 						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id  
 									   INNER JOIN dbo.COM_Status 
 										     ON dbo.COM_Committee.COM_Status_id = dbo.COM_Status.COM_Status_id
-                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' ")
+                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' {WhereStatus}")
         End If
 
         If TstclistNow.Checked = True Then
@@ -84,7 +90,7 @@ Public Class FormCommitteeCancel
 						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id  
 									   INNER JOIN dbo.COM_Status 
 										     ON dbo.COM_Committee.COM_Status_id = dbo.COM_Status.COM_Status_id
-                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' AND {TcomlistNow}")
+                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' AND {TcomlistNow} {WhereStatus}")
 
         End If
 
@@ -103,7 +109,7 @@ Public Class FormCommitteeCancel
 						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id  
 									   INNER JOIN dbo.COM_Status 
 										     ON dbo.COM_Committee.COM_Status_id = dbo.COM_Status.COM_Status_id
-                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' AND {TcomlistDate}")
+                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' AND {TcomlistDate} {WhereStatus}")
         End If
 
         ReportViewer1.Reset()
@@ -169,4 +175,26 @@ Public Class FormCommitteeCancel
             Me.ReportViewer1.ShowPrintButton = False
         End If
     End Sub
+    ' ============  Add list to ComboBox CbListArea  ============ '
+    Private Sub CreateListStatus(SqlCommandList As String, NameColumn As String)
+        Dim Tcom_area = New DataTable
+        Tcom_area = SQLCommand(SqlCommandList)
+
+        Dim _ListNameArea(Tcom_area.Rows.Count) As String
+        For i = 0 To _ListNameArea.Length - 1
+            _ListNameArea(i) = If(i = 0, "เลือกทั้งหมด", Tcom_area(i - 1)(NameColumn))
+            CbListArea.Items.Add(_ListNameArea(i))
+        Next
+        CbListArea.SelectedIndex = 0
+    End Sub
+    ' ============  Return ID for Select ComboBox CbListArea  ============ '
+    Private Function ReIDStatus(SqlCommandList As String, NameColumn As String, Optional Order As Integer = 0)
+        Dim PointArea As String = "All"
+        Dim Tcom_area = New DataTable
+        Tcom_area = SQLCommand(SqlCommandList)
+        If Order <> 0 Then
+            PointArea = Tcom_area(Order - 1)(NameColumn)
+        End If
+        Return PointArea
+    End Function
 End Class

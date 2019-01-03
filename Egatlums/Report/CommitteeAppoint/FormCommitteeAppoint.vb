@@ -28,7 +28,7 @@ Public Class FormCommitteeAppoint
         Me.ToolStrip1.Items(8).Alignment = ToolStripItemAlignment.Right
         Dtpto.Visible = False
 
-        CreateListArea()
+        CreateListArea("SELECT Area_name FROM COM_Area", "Area_name")
         Setauthorize()
     End Sub
     Private Sub Tsbreports_Click(sender As Object, e As EventArgs) Handles Tsbreports.Click
@@ -47,8 +47,8 @@ Public Class FormCommitteeAppoint
         Approve = "1"
 
         ' ============  Select List Area  ============ '
-        Dim WhereArea As String = If(ReIDArea(CbListArea.SelectedIndex) <> "All",
-                       $"And (COM_Area.Area_id = '{ReIDArea(CbListArea.SelectedIndex)}')", "")
+        Dim WhereArea As String = If(ReIDArea("SELECT Area_id FROM COM_Area", "Area_id", CbListArea.SelectedIndex) <> "All",
+                       $"And (COM_Area.Area_id = '{ReIDArea("SELECT Area_id FROM COM_Area", "Area_id", CbListArea.SelectedIndex)}')", "")
 
         ' ============  Where for TstclistNow Checked Is Committee Current agenda  ============ '
         TcomlistNow = $"convert(varchar, getdate(), 23) BETWEEN dbo.COM_Committee.COM_StartDate AND dbo.COM_Committee.COM_EndDate {WhereArea}"
@@ -183,25 +183,25 @@ Public Class FormCommitteeAppoint
     End Sub
 
     ' ============  Add list to ComboBox CbListArea  ============ '
-    Private Sub CreateListArea()
+    Private Sub CreateListArea(SqlCommandList As String, NameColumn As String)
         Dim Tcom_area = New DataTable
-        Tcom_area = SQLCommand("SELECT Area_name FROM COM_Area")
+        Tcom_area = SQLCommand(SqlCommandList)
 
         Dim _ListNameArea(Tcom_area.Rows.Count) As String
         For i = 0 To _ListNameArea.Length - 1
-            _ListNameArea(i) = If(i = 0, "เลือกทั้งหมด", Tcom_area(i - 1)("Area_name"))
+            _ListNameArea(i) = If(i = 0, "เลือกทั้งหมด", Tcom_area(i - 1)(NameColumn))
             CbListArea.Items.Add(_ListNameArea(i))
         Next
         CbListArea.SelectedIndex = 0
     End Sub
 
     ' ============  Return ID for Select ComboBox CbListArea  ============ '
-    Private Function ReIDArea(Optional Order As Integer = 0)
+    Private Function ReIDArea(SqlCommandList As String, NameColumn As String, Optional Order As Integer = 0)
         Dim PointArea As String = "All"
         Dim Tcom_area = New DataTable
-        Tcom_area = SQLCommand("SELECT Area_id FROM COM_Area")
+        Tcom_area = SQLCommand(SqlCommandList)
         If Order <> 0 Then
-            PointArea = Tcom_area(Order - 1)("Area_id")
+            PointArea = Tcom_area(Order - 1)(NameColumn)
         End If
         Return PointArea
     End Function

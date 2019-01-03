@@ -36,6 +36,10 @@ Partial Class FormCommitteeCancel
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
         Me.TstclistAll = New Egatlib.Ctrltoolstripcheckbox()
         Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripLabel7 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripLabel6 = New System.Windows.Forms.ToolStripLabel()
+        Me.CbListArea = New System.Windows.Forms.ToolStripComboBox()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.GroupBox1.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -66,7 +70,7 @@ Partial Class FormCommitteeCancel
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tsbclose, Me.Tsbreports, Me.ToolStripSeparator1, Me.ToolStripLabel3, Me.ToolStripLabel5, Me.TstclistDate, Me.ToolStripLabel2, Me.TstclistNow, Me.ToolStripLabel4, Me.TstclistAll, Me.ToolStripLabel1})
+        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Tsbclose, Me.Tsbreports, Me.ToolStripSeparator1, Me.CbListArea, Me.ToolStripLabel6, Me.ToolStripLabel7, Me.ToolStripSeparator2, Me.ToolStripLabel3, Me.ToolStripLabel5, Me.TstclistDate, Me.ToolStripLabel2, Me.TstclistNow, Me.ToolStripLabel4, Me.TstclistAll, Me.ToolStripLabel1})
         Me.ToolStrip1.Location = New System.Drawing.Point(3, 23)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(1053, 51)
@@ -177,6 +181,35 @@ Partial Class FormCommitteeCancel
         Me.ToolStripLabel1.Size = New System.Drawing.Size(55, 48)
         Me.ToolStripLabel1.Text = "ค้นหา   "
         '
+        'ToolStripLabel7
+        '
+        Me.ToolStripLabel7.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel7.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripLabel7.Name = "ToolStripLabel7"
+        Me.ToolStripLabel7.Size = New System.Drawing.Size(13, 48)
+        Me.ToolStripLabel7.Text = " "
+        '
+        'ToolStripLabel6
+        '
+        Me.ToolStripLabel6.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripLabel6.Font = New System.Drawing.Font("Segoe UI", 11.25!)
+        Me.ToolStripLabel6.Name = "ToolStripLabel6"
+        Me.ToolStripLabel6.Size = New System.Drawing.Size(94, 48)
+        Me.ToolStripLabel6.Text = "การสิ้นสภาพ   "
+        '
+        'CbListArea
+        '
+        Me.CbListArea.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.CbListArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CbListArea.Name = "CbListArea"
+        Me.CbListArea.Size = New System.Drawing.Size(121, 51)
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 51)
+        '
         'FormCommitteeCancel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -207,4 +240,8 @@ Partial Class FormCommitteeCancel
     Friend WithEvents ToolStripLabel3 As ToolStripLabel
     Friend WithEvents TstclistDate As Egatlib.Ctrltoolstripcheckbox
     Friend WithEvents ToolStripLabel5 As ToolStripLabel
+    Friend WithEvents ToolStripLabel6 As ToolStripLabel
+    Friend WithEvents ToolStripLabel7 As ToolStripLabel
+    Friend WithEvents CbListArea As ToolStripComboBox
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class
