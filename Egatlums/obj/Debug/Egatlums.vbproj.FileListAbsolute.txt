@@ -66,8 +66,6 @@ C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.exe
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.pdb
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlums.xml
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Microsoft.ReportViewer.WinForms.dll
-C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlib.pdb
-C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlib.xml
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.vbprojResolveAssemblyReference.cache
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Formdbconfig.resources
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.Form1.resources
@@ -85,3 +83,4 @@ C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommit
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeReport.resources
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeTeam.resources
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeTerminate.resources
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlib.dll
