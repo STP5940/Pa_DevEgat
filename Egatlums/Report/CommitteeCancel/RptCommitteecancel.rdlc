@@ -24,10 +24,6 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Expr1">
-          <DataField>Expr1</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
         <Field Name="Member_id">
           <DataField>Member_id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -36,36 +32,8 @@
           <DataField>COM_TYPE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="COM_StartDate">
-          <DataField>COM_StartDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="COM_EndDate">
-          <DataField>COM_EndDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Remark">
-          <DataField>Remark</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COM_EndId">
-          <DataField>COM_EndId</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="COM_TYPE1">
-          <DataField>COM_TYPE1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="COM_DESC">
           <DataField>COM_DESC</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Member_Id1">
-          <DataField>Member_Id1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Membertype_Id">
-          <DataField>Membertype_Id</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Membertype">
@@ -75,10 +43,6 @@
         <Field Name="Member_Date">
           <DataField>Member_Date</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Title_Id">
-          <DataField>Title_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Title">
           <DataField>Title</DataField>
@@ -92,81 +56,33 @@
           <DataField>Member_Lastname</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Position_Id">
-          <DataField>Position_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Position">
-          <DataField>Position</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Section">
-          <DataField>Section</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Member_Addr">
-          <DataField>Member_Addr</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Cardtype_Id">
-          <DataField>Cardtype_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Cardtype">
-          <DataField>Cardtype</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Idcard_No">
-          <DataField>Idcard_No</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Home_Telno">
-          <DataField>Home_Telno</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Mobile_No">
-          <DataField>Mobile_No</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Member_Birthdate">
-          <DataField>Member_Birthdate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="Gender">
-          <DataField>Gender</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Nation_Id">
-          <DataField>Nation_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Nation">
-          <DataField>Nation</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Religion_Id">
-          <DataField>Religion_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Religion">
-          <DataField>Religion</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Race_Id">
-          <DataField>Race_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Race">
-          <DataField>Race</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Remarkaddrformold">
-          <DataField>Remarkaddrformold</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Memberstatus_Id">
           <DataField>Memberstatus_Id</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="COM_Status_id">
+          <DataField>COM_Status_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="COM_Approve">
+          <DataField>COM_Approve</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="COM_active">
+          <DataField>COM_active</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="COM_Status">
+          <DataField>COM_Status</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_StartDate">
+          <DataField>COM_StartDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COM_EndDate">
+          <DataField>COM_EndDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
@@ -190,16 +106,19 @@
                   <Width>1.12202in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>3.3831in</Width>
+                  <Width>3.11227in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1.83333in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.67708in</Width>
+                  <Width>1.55208in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.50184in</Width>
+                  <Width>1.39073in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.5in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -357,6 +276,39 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>CornflowerBlue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>หมายเหตุ</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -534,12 +486,45 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="COM_Status">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!COM_Status.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>COM_Status</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -557,9 +542,9 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.1575in</Top>
-            <Left>0.93006in</Left>
+            <Left>0.43006in</Left>
             <Height>0.5in</Height>
-            <Width>9.51737in</Width>
+            <Width>10.51043in</Width>
             <Style>
               <Border>
                 <Style>None</Style>

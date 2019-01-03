@@ -56,13 +56,17 @@ Public Class FormCommitteeCancel
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 11) As COM_StartDate,
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_EndDate), 0, 11) As COM_EndDate, 
 							                  dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname, 
-                                              dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, dbo.VT_Member.Memberstatus_Id
+                                              dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, dbo.VT_Member.Memberstatus_Id,
+											  dbo.COM_Committee.COM_Approve,dbo.COM_Committee.COM_active,dbo.COM_Committee.COM_Status_id, 
+											  dbo.COM_Status.COM_Status
 						               FROM dbo.COM_Committee 
 						               INNER JOIN dbo.COM_Type 
 							                 ON dbo.COM_Committee.COM_TYPE = dbo.COM_Type.COM_TYPE 
 					                   INNER JOIN dbo.VT_Member 
 						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id  
-                                       Where dbo.VT_Member.Memberstatus_Id = '0' ")
+									   INNER JOIN dbo.COM_Status 
+										     ON dbo.COM_Committee.COM_Status_id = dbo.COM_Status.COM_Status_id
+                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' ")
         End If
 
         If TstclistNow.Checked = True Then
@@ -70,29 +74,36 @@ Public Class FormCommitteeCancel
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 11) As COM_StartDate,
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_EndDate), 0, 11) As COM_EndDate, 
 							                  dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname, 
-                                              dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, dbo.VT_Member.Memberstatus_Id
+                                              dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, dbo.VT_Member.Memberstatus_Id,
+											  dbo.COM_Committee.COM_Approve,dbo.COM_Committee.COM_active,dbo.COM_Committee.COM_Status_id, 
+											  dbo.COM_Status.COM_Status
 						               FROM dbo.COM_Committee 
 						               INNER JOIN dbo.COM_Type 
 							                 ON dbo.COM_Committee.COM_TYPE = dbo.COM_Type.COM_TYPE 
 					                   INNER JOIN dbo.VT_Member 
 						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id  
-                                       Where dbo.VT_Member.Memberstatus_Id = '0' AND {TcomlistNow}")
+									   INNER JOIN dbo.COM_Status 
+										     ON dbo.COM_Committee.COM_Status_id = dbo.COM_Status.COM_Status_id
+                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' AND {TcomlistNow}")
 
         End If
 
         If TstclistDate.Checked = True Then
-            Tmasterrptdt = SQLCommand($"Select dbo.COM_Committee.Member_id, dbo.COM_Committee.COM_TYPE, dbo.VT_Member.Membertype,
+            Tmasterrptdt = SQLCommand($"SELECT dbo.COM_Committee.Member_id, dbo.COM_Committee.COM_TYPE, dbo.VT_Member.Membertype,
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 11) As COM_StartDate,
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_EndDate), 0, 11) As COM_EndDate, 
-                                              dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname,
-                                              dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, dbo.VT_Member.Memberstatus_Id
-                                       From dbo.COM_Committee 
+							                  dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname, 
+                                              dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, dbo.VT_Member.Memberstatus_Id,
+											  dbo.COM_Committee.COM_Approve,dbo.COM_Committee.COM_active,dbo.COM_Committee.COM_Status_id, 
+											  dbo.COM_Status.COM_Status
+						               FROM dbo.COM_Committee 
 						               INNER JOIN dbo.COM_Type 
 							                 ON dbo.COM_Committee.COM_TYPE = dbo.COM_Type.COM_TYPE 
 					                   INNER JOIN dbo.VT_Member 
-						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id 
-									   WHERE Memberstatus_Id = '0' 
-                                             AND {TcomlistDate}")
+						                     ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id  
+									   INNER JOIN dbo.COM_Status 
+										     ON dbo.COM_Committee.COM_Status_id = dbo.COM_Status.COM_Status_id
+                                       Where dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '0' AND {TcomlistDate}")
         End If
 
         ReportViewer1.Reset()
