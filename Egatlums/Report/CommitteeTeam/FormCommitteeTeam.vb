@@ -20,13 +20,8 @@ Public Class FormCommitteeTeam
         Setauthorize()
     End Sub
     Private Sub Tsbreports_Click(sender As Object, e As EventArgs) Handles Tsbreports.Click
-        Dim Tcomtext1 As String
-
-        Tcomtext1 = $"SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 8) = '{Dtpfm.Value.ToString("yyyy-MM-dd").Substring(0, 7)}'"
-
         Dim TcomlistNow As String
-        ' ============  Where for TstclistNow Checked Is Committee Current agenda  ============ '
-
+        ' ============  Where for TstclistNow Checked Is Committee Current CountCommitee for Month  ============ '
         TcomlistNow = $"'{Dtpfm.Value.ToString("yyyy-MM-dd").Substring(0, 7)}' 
                       BETWEEN SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 8)  
                       AND SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_EndDate), 0, 8)"
