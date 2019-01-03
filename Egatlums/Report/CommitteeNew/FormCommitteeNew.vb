@@ -31,22 +31,26 @@ Public Class FormCommitteeNew
                                               dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname, 
                                               dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, 
                                               dbo.VT_Member.Membertype
+											  ,dbo.COM_Committee.COM_Approve,dbo.COM_Committee.COM_active
                                        FROM dbo.COM_Committee 
                                        INNER JOIN dbo.COM_Type 
                                              ON dbo.COM_Committee.COM_TYPE = dbo.COM_Type.COM_TYPE 
                                        INNER JOIN dbo.VT_Member 
-                                             ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id")
+                                             ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id
+									   WHERE dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '1'")
         Else
             Tmasterrptdt = SQLCommand("SELECT dbo.COM_Committee.Member_id, dbo.COM_Committee.COM_TYPE, 
                                               SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 11) As COM_StartDate,
                                               dbo.COM_Type.COM_DESC, dbo.VT_Member.Title, dbo.VT_Member.Member_Firstname, 
                                               dbo.VT_Member.Member_Lastname, dbo.VT_Member.Member_Date, 
                                               dbo.VT_Member.Membertype
+											  ,dbo.COM_Committee.COM_Approve,dbo.COM_Committee.COM_active
                                        FROM dbo.COM_Committee 
                                        INNER JOIN dbo.COM_Type 
                                              ON dbo.COM_Committee.COM_TYPE = dbo.COM_Type.COM_TYPE 
                                        INNER JOIN dbo.VT_Member 
-                                             ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id Where " & Tcomtext1)
+                                             ON dbo.COM_Committee.Member_id = dbo.VT_Member.Member_Id
+									   WHERE dbo.COM_Committee.COM_Approve = '1' AND dbo.COM_Committee.COM_active = '1' AND " & Tcomtext1)
         End If
 
         ReportViewer1.Reset()
