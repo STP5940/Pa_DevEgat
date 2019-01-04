@@ -2,32 +2,11 @@
 Imports Microsoft.Reporting.WinForms
 Public Class FormCommitteeAppoint
     Private Tmasterrptdt As DataTable
-    Private WithEvents Dtpfm As New DateTimePicker
-    Private WithEvents Dtpto As New DateTimePicker
+    'Private WithEvents Dtpfm As New DateTimePicker
+    'Private WithEvents Dtpto As New DateTimePicker
 
     Private Sub FormCommitteeCancel_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.WindowState = FormWindowState.Maximized
-
-        ' ============  Start Date Search  ============ '
-        Dtpfm.CustomFormat = "MMMMyyyy"
-        Dtpfm.Format = DateTimePickerFormat.Custom
-        Controls.Add(Dtpfm)
-        Dtpfm.Value = Now
-        Dtpfm.Width = 160
-        Me.ToolStrip1.Items.Insert(9, New ToolStripControlHost(Dtpfm))
-        Me.ToolStrip1.Items(9).Alignment = ToolStripItemAlignment.Right
-        Dtpfm.Visible = False
-
-        ' ============  To Date Search  ============ '
-        Dtpto.CustomFormat = "MMMMyyyy"
-        Dtpto.Format = DateTimePickerFormat.Custom
-        Controls.Add(Dtpto)
-        Dtpto.Value = Now
-        Dtpto.Width = 160
-        Me.ToolStrip1.Items.Insert(8, New ToolStripControlHost(Dtpto))
-        Me.ToolStrip1.Items(8).Alignment = ToolStripItemAlignment.Right
-        Dtpto.Visible = False
-
         CreateListArea("SELECT Area_name FROM COM_Area", "Area_name")
         Setauthorize()
     End Sub
@@ -55,12 +34,12 @@ Public Class FormCommitteeAppoint
 
         ' ============  Where for TcomlistDate Checked Is Search for DateStaet to Date Stop  ============ '
         TcomlistDate = $"(SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_StartDate), 0, 8) 
-                             BETWEEN  '{Dtpfm.Value.ToString("yyyy-MM-dd").Substring(0, 7)}' 
-                             AND '{Dtpto.Value.ToString("yyyy-MM-dd").Substring(0, 7)}') 
+                             BETWEEN  '{CDate(Dtpfm.Text).ToString("yyyy-MM-dd").Substring(0, 7)}' 
+                             AND '{CDate(Dtpto.Text).ToString("yyyy-MM-dd").Substring(0, 7)}') 
                          AND 
                          (SUBSTRING(CONVERT(nvarchar, dbo.COM_Committee.COM_EndDate), 0, 8)  
-                             BETWEEN  '{Dtpfm.Value.ToString("yyyy-MM-dd").Substring(0, 7)}' 
-                             AND '{Dtpto.Value.ToString("yyyy-MM-dd").Substring(0, 7)}') {WhereArea}"
+                             BETWEEN  '{CDate(Dtpfm.Text).ToString("yyyy-MM-dd").Substring(0, 7)}' 
+                             AND '{CDate(Dtpto.Text).ToString("yyyy-MM-dd").Substring(0, 7)}') {WhereArea}"
 
         ' ============  Category Show Data for Report  ============ '
         Tmasterrptdt = New DataTable
@@ -147,25 +126,25 @@ Public Class FormCommitteeAppoint
             TstclistDate.Checked = False
         End If
     End Sub
-    Private Sub TstclistDate_Click(sender As Object, e As EventArgs) Handles TstclistDate.CheckedChanged
-        If TstclistDate.Checked = True Then
-            TstclistAll.Checked = False
-            TstclistNow.Checked = False
-            Dtpfm.Enabled = True
-            Dtpfm.Visible = True
-            Dtpto.Enabled = True
-            Dtpto.Visible = True
-            ToolStripLabel4.Visible = False
-            ToolStripLabel5.Visible = True
-        Else
-            Dtpfm.Enabled = False
-            Dtpfm.Visible = False
-            Dtpto.Enabled = False
-            Dtpto.Visible = False
-            ToolStripLabel4.Visible = True
-            ToolStripLabel5.Visible = False
-        End If
-    End Sub
+    'Private Sub TstclistDate_Click(sender As Object, e As EventArgs) Handles TstclistDate.CheckedChanged
+    '    If TstclistDate.Checked = True Then
+    '        TstclistAll.Checked = False
+    '        TstclistNow.Checked = False
+    '        Dtpfm.Enabled = True
+    '        Dtpfm.Visible = True
+    '        Dtpto.Enabled = True
+    '        Dtpto.Visible = True
+    '        ToolStripLabel4.Visible = False
+    '        ToolStripLabel5.Visible = True
+    '    Else
+    '        Dtpfm.Enabled = False
+    '        Dtpfm.Visible = False
+    '        Dtpto.Enabled = False
+    '        Dtpto.Visible = False
+    '        ToolStripLabel4.Visible = True
+    '        ToolStripLabel5.Visible = False
+    '    End If
+    'End Sub
 
 
     ' <==========================================>
