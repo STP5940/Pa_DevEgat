@@ -165,6 +165,17 @@
     <Compile Include="Report\CommitteeTerminate\FormCommitteeTerminate.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\Committee\FormCommittee.Designer.vb">
+      <DependentUpon>FormCommittee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Committee\FormCommittee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\Committee\DsCommittee.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsCommittee.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Report\Newmemberrpt\DsNewmember.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -257,6 +268,9 @@
       <DependentUpon>FormCommitteeTerminate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\CommitteeTerminate\RptCommitteeterminate.rdlc" />
+    <EmbeddedResource Include="Report\Committee\FormCommittee.resx">
+      <DependentUpon>FormCommittee.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\Newmemberrpt\FormNewMemberrpt.resx">
       <DependentUpon>FormNewMemberrpt.vb</DependentUpon>
     </EmbeddedResource>
@@ -349,6 +363,17 @@
     </None>
     <None Include="Report\CommitteeTerminate\DsCommitteeterminate.xss">
       <DependentUpon>DsCommitteeterminate.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Committee\DsCommittee.xsc">
+      <DependentUpon>DsCommittee.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Committee\DsCommittee.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsCommittee.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Report\Committee\DsCommittee.xss">
+      <DependentUpon>DsCommittee.xsd</DependentUpon>
     </None>
     <None Include="Report\Newmemberrpt\DsNewmember.xsc">
       <DependentUpon>DsNewmember.xsd</DependentUpon>

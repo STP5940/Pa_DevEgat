@@ -60,4 +60,8 @@ Public Class Formmain
     Private Sub CommitteeReportToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeReportToolStripMenuItem.Click
         Showformonpanel(FormCommitteeReport, Panel1)
     End Sub
+
+    Private Sub CommitteeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CommitteeToolStripMenuItem.Click
+        Showformonpanel(FormCommittee, Panel1)
+    End Sub
 End Class

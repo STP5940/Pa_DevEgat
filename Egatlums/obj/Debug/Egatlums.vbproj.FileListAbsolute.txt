@@ -84,3 +84,4 @@ C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommit
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeTeam.resources
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommitteeTerminate.resources
 C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\bin\Debug\Egatlib.dll
+C:\Users\this\Documents\GitHub\Pa_DevEgat\Egatlums\obj\Debug\Egatlums.FormCommittee.resources

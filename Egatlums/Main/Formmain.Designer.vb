@@ -29,9 +29,6 @@ Partial Class Formmain
         Me.ReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ReportToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CofigDatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.CommitteeNewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CommitteeCancelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CommitteeAppointToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -39,6 +36,10 @@ Partial Class Formmain
         Me.CommitteeTerminateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CommitteeTeamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CommitteeReportToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CofigDatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.CommitteeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -59,7 +60,7 @@ Partial Class Formmain
         '
         'ReportToolStripMenuItem
         '
-        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportToolStripMenuItem1, Me.ReportToolStripMenuItem2, Me.CommitteeNewToolStripMenuItem, Me.CommitteeCancelToolStripMenuItem, Me.CommitteeAppointToolStripMenuItem, Me.CommitteeNoteToolStripMenuItem, Me.CommitteeTerminateToolStripMenuItem, Me.CommitteeTeamToolStripMenuItem, Me.CommitteeReportToolStripMenuItem})
+        Me.ReportToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReportToolStripMenuItem1, Me.ReportToolStripMenuItem2, Me.CommitteeNewToolStripMenuItem, Me.CommitteeCancelToolStripMenuItem, Me.CommitteeAppointToolStripMenuItem, Me.CommitteeNoteToolStripMenuItem, Me.CommitteeTerminateToolStripMenuItem, Me.CommitteeTeamToolStripMenuItem, Me.CommitteeReportToolStripMenuItem, Me.CommitteeToolStripMenuItem})
         Me.ReportToolStripMenuItem.Name = "ReportToolStripMenuItem"
         Me.ReportToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
         Me.ReportToolStripMenuItem.Text = "Report"
@@ -75,21 +76,6 @@ Partial Class Formmain
         Me.ReportToolStripMenuItem2.Name = "ReportToolStripMenuItem2"
         Me.ReportToolStripMenuItem2.Size = New System.Drawing.Size(190, 22)
         Me.ReportToolStripMenuItem2.Text = "New members"
-        '
-        'CofigDatabaseToolStripMenuItem
-        '
-        Me.CofigDatabaseToolStripMenuItem.Name = "CofigDatabaseToolStripMenuItem"
-        Me.CofigDatabaseToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
-        Me.CofigDatabaseToolStripMenuItem.Text = "Cofig Database"
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.Transparent
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 24)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1008, 705)
-        Me.Panel1.TabIndex = 9
         '
         'CommitteeNewToolStripMenuItem
         '
@@ -133,6 +119,27 @@ Partial Class Formmain
         Me.CommitteeReportToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
         Me.CommitteeReportToolStripMenuItem.Text = "Committee Report"
         '
+        'CofigDatabaseToolStripMenuItem
+        '
+        Me.CofigDatabaseToolStripMenuItem.Name = "CofigDatabaseToolStripMenuItem"
+        Me.CofigDatabaseToolStripMenuItem.Size = New System.Drawing.Size(99, 20)
+        Me.CofigDatabaseToolStripMenuItem.Text = "Cofig Database"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel1.Location = New System.Drawing.Point(0, 24)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1008, 705)
+        Me.Panel1.TabIndex = 9
+        '
+        'CommitteeToolStripMenuItem
+        '
+        Me.CommitteeToolStripMenuItem.Name = "CommitteeToolStripMenuItem"
+        Me.CommitteeToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+        Me.CommitteeToolStripMenuItem.Text = "Committee"
+        '
         'Formmain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -166,4 +173,5 @@ Partial Class Formmain
     Friend WithEvents CommitteeTerminateToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CommitteeTeamToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CommitteeReportToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommitteeToolStripMenuItem As ToolStripMenuItem
 End Class
